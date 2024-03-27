@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        >
+
+
+        <TextView
+            android:background="#E8E8E8"
+            android:id="@+id/tarefa_descricao"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            tools:text="Tarefa1"
+            />
+
+        <ImageButton
+            android:id="@+id/bt_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="#E91E63"
+            android:backgroundTint="#F44336"
+            android:src="@drawable/ic_delete" />
+
+        <ImageButton
+            android:id="@+id/bt_check"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="#4CAF50"
+            android:src="@drawable/baseline_check_box_24" />
+
+        <ImageButton
+            android:id="@+id/bt_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="#FFEB3B"
+            android:backgroundTint="#FFEB3B"
+            android:src="@drawable/baseline_edit_square_24" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
