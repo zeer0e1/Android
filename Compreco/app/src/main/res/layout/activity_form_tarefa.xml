@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:hint="Descrição"
-            android:inputType="text"
+            android:inputType="textMultiLine"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

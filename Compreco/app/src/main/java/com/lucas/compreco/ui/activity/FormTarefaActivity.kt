@@ -13,19 +13,23 @@ class FormTarefaActivity : AppCompatActivity(
     R.layout.activity_form_tarefa
 
 ) {
+    private val dao = TarefasDAO
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_form_tarefa)
         val btSalvar = findViewById<Button>(R.id.bt_salvar)
 
         btSalvar.setOnClickListener {
             val campoDescricao = findViewById<EditText>(R.id.tarefa_descricao)
             val descricao = campoDescricao.text.toString()
-            val novaTarefa = Tarefa(descricao = descricao)
-            Log.i("FormAcitivy", "onCreate:$novaTarefa ")
 
-            TarefasDAO.add(novaTarefa)
-            Log.i("FormAcitivy", "onCreate:${TarefasDAO.buscaTodos()} ")
+            val novaTarefa = Tarefa(descricao = descricao)
+
+
+
+            dao.add(novaTarefa)
+
             finish()
 
         }

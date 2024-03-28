@@ -2,8 +2,8 @@ package com.lucas.compreco.dao
 
 import com.lucas.compreco.modelo.Tarefa
 
-object TarefasDAO {
-    private val tarefas = mutableListOf<Tarefa>()
+ object TarefasDAO {
+     private val tarefas = mutableListOf<Tarefa>()
 
     fun add(tarefa: Tarefa) {
         tarefas.add(tarefa)
@@ -12,4 +12,10 @@ object TarefasDAO {
     fun buscaTodos(): List<Tarefa> {
         return tarefas.toList()
     }
+
+     fun removerTarefa(position: Int){
+         tarefas.removeAt(position)
+     }
+
+
 }
